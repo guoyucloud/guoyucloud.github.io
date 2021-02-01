@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.guoyucloud.com/2021/02/01/04%20|%20%E7%BC%96%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AATypeScript%E7%A8%8B%E5%BA%8F/</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.guoyucloud.com/about/index.html</loc>
     
     <lastmod>2020-12-22</lastmod>
@@ -67,7 +74,7 @@
 
   <url>
     <loc>https://www.guoyucloud.com/</loc>
-    <lastmod>2020-12-22</lastmod>
+    <lastmod>2021-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,7 +82,7 @@
   
   <url>
     <loc>https://www.guoyucloud.com/tags/OTHER/</loc>
-    <lastmod>2020-12-22</lastmod>
+    <lastmod>2021-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -84,7 +91,7 @@
   
   <url>
     <loc>https://www.guoyucloud.com/categories/other/</loc>
-    <lastmod>2020-12-22</lastmod>
+    <lastmod>2021-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
