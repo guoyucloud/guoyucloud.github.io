@@ -56,6 +56,111 @@
       </tags>
   </entry>
   <entry>
+    <title>05 | 基本类型</title>
+    <url>/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<ul>
+<li><h3 id="ES6-的数据类型-与-TypeScript-的数据类型"><a href="#ES6-的数据类型-与-TypeScript-的数据类型" class="headerlink" title="ES6 的数据类型 与 TypeScript 的数据类型"></a>ES6 的数据类型 与 TypeScript 的数据类型</h3><table style="text-align: center;">
+<thead>
+<tr>
+<th>ES6 的数据类型</th>
+<th>TypeScript 的数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td>Symbol</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td></td>
+<td>void</td>
+</tr>
+<tr>
+<td></td>
+<td>any</td>
+</tr>
+<tr>
+<td></td>
+<td>never</td>
+</tr>
+<tr>
+<td></td>
+<td>元组</td>
+</tr>
+<tr>
+<td></td>
+<td>枚举</td>
+</tr>
+<tr>
+<td></td>
+<td>高级类型</td>
+</tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3></li>
+</ul>
+<blockquote>
+<p>作用：相当于强类型语言中的类型声明<br>语法：(变量/函数):type</p>
+</blockquote>
+<ul>
+<li><h3 id="在src文件夹中新建datatype-ts文件，在index-ts中引入该文件"><a href="#在src文件夹中新建datatype-ts文件，在index-ts中引入该文件" class="headerlink" title="在src文件夹中新建datatype.ts文件，在index.ts中引入该文件"></a>在src文件夹中新建<code>datatype.ts</code>文件，在<code>index.ts</code>中引入该文件</h3></li>
+</ul>
+<blockquote>
+<p>index.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import &#39;.&#x2F;datatype&#39;; &#x2F;&#x2F; 新增这句话</span><br><span class="line"></span><br><span class="line">let hello : String &#x3D; &#39;Hello TypeScript&#39;;</span><br><span class="line">document.querySelectorAll(&#39;.app&#39;)[0].innerHTML &#x3D; &#39;hello&#39;;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>datatype.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 原始类型</span><br><span class="line">let bool: boolean &#x3D; true;</span><br><span class="line">let num: number | undefined | null &#x3D; 123;</span><br><span class="line">let str: string &#x3D; &#39;abc&#39;;</span><br><span class="line">&#x2F;&#x2F; str &#x3D; 123; &#x2F;&#x2F; TS2322: Type &#39;number&#39; is not assignable to type &#39;string&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 数组</span><br><span class="line">let arr1: number[] &#x3D; [1, 2, 3];</span><br><span class="line">let arr2: Array&lt;number | string&gt; &#x3D; [1, 2, 3, &#39;666&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 元组</span><br><span class="line">let tuple: [number, string] &#x3D; [0, &#39;1&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 函数</span><br><span class="line">let add &#x3D; (x: number, y:number) &#x3D;&gt; x + y;</span><br><span class="line">let compute: (x: number, y: number) &#x3D;&gt; number;</span><br><span class="line">compute &#x3D; (a, b) &#x3D;&gt; a + b;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">let obj: &#123;x: number, y: number&#125; &#x3D; &#123;x: 1, y: 2&#125;;</span><br><span class="line">obj.x &#x3D; 3;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; symbol</span><br><span class="line">let s1: symbol &#x3D; Symbol();</span><br><span class="line">let s2 &#x3D; Symbol();</span><br><span class="line">console.log(s1 &#x3D;&#x3D;&#x3D; s2);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined, null</span><br><span class="line">let un: undefined &#x3D; undefined;</span><br><span class="line">let nu: null &#x3D; null;</span><br><span class="line">num &#x3D; undefined; &#x2F;&#x2F; TS2322: Type &#39;undefined&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line">num &#x3D; null; &#x2F;&#x2F; TS2322: Type &#39;null&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void</span><br><span class="line">let noReturn &#x3D; () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; any</span><br><span class="line">let x;</span><br><span class="line">x &#x3D; 1;</span><br><span class="line">x &#x3D; [];</span><br><span class="line">x &#x3D; () &#x3D;&gt; &#123;&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; never</span><br><span class="line">let error &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    throw new Error(&#39;error&#39;);</span><br><span class="line">&#125;</span><br><span class="line">let endless &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    while(true) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>欢迎来到GuoYuCloud</title>
     <url>/2020/12/17/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYuCloud/</url>
     <content><![CDATA[<blockquote>

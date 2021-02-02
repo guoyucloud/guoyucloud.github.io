@@ -210,6 +210,192 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.guoyucloud.com/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar.png">
+      <meta itemprop="name" content="郭宇">
+      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭宇WEB前端技术栈">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" class="post-title-link" itemprop="url">05 | 基本类型</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-02-02 14:40:29 / 修改时间：17:00:29" itemprop="dateCreated datePublished" datetime="2021-02-02T14:40:29+08:00">2021-02-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h3 id="ES6-的数据类型-与-TypeScript-的数据类型"><a href="#ES6-的数据类型-与-TypeScript-的数据类型" class="headerlink" title="ES6 的数据类型 与 TypeScript 的数据类型"></a>ES6 的数据类型 与 TypeScript 的数据类型</h3><table style="text-align: center;">
+<thead>
+<tr>
+<th>ES6 的数据类型</th>
+<th>TypeScript 的数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td>Symbol</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td></td>
+<td>void</td>
+</tr>
+<tr>
+<td></td>
+<td>any</td>
+</tr>
+<tr>
+<td></td>
+<td>never</td>
+</tr>
+<tr>
+<td></td>
+<td>元组</td>
+</tr>
+<tr>
+<td></td>
+<td>枚举</td>
+</tr>
+<tr>
+<td></td>
+<td>高级类型</td>
+</tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3></li>
+</ul>
+<blockquote>
+<p>作用：相当于强类型语言中的类型声明<br>语法：(变量/函数):type</p>
+</blockquote>
+<ul>
+<li><h3 id="在src文件夹中新建datatype-ts文件，在index-ts中引入该文件"><a href="#在src文件夹中新建datatype-ts文件，在index-ts中引入该文件" class="headerlink" title="在src文件夹中新建datatype.ts文件，在index.ts中引入该文件"></a>在src文件夹中新建<code>datatype.ts</code>文件，在<code>index.ts</code>中引入该文件</h3></li>
+</ul>
+<blockquote>
+<p>index.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import &#39;.&#x2F;datatype&#39;; &#x2F;&#x2F; 新增这句话</span><br><span class="line"></span><br><span class="line">let hello : String &#x3D; &#39;Hello TypeScript&#39;;</span><br><span class="line">document.querySelectorAll(&#39;.app&#39;)[0].innerHTML &#x3D; &#39;hello&#39;;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>datatype.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 原始类型</span><br><span class="line">let bool: boolean &#x3D; true;</span><br><span class="line">let num: number | undefined | null &#x3D; 123;</span><br><span class="line">let str: string &#x3D; &#39;abc&#39;;</span><br><span class="line">&#x2F;&#x2F; str &#x3D; 123; &#x2F;&#x2F; TS2322: Type &#39;number&#39; is not assignable to type &#39;string&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 数组</span><br><span class="line">let arr1: number[] &#x3D; [1, 2, 3];</span><br><span class="line">let arr2: Array&lt;number | string&gt; &#x3D; [1, 2, 3, &#39;666&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 元组</span><br><span class="line">let tuple: [number, string] &#x3D; [0, &#39;1&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 函数</span><br><span class="line">let add &#x3D; (x: number, y:number) &#x3D;&gt; x + y;</span><br><span class="line">let compute: (x: number, y: number) &#x3D;&gt; number;</span><br><span class="line">compute &#x3D; (a, b) &#x3D;&gt; a + b;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">let obj: &#123;x: number, y: number&#125; &#x3D; &#123;x: 1, y: 2&#125;;</span><br><span class="line">obj.x &#x3D; 3;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; symbol</span><br><span class="line">let s1: symbol &#x3D; Symbol();</span><br><span class="line">let s2 &#x3D; Symbol();</span><br><span class="line">console.log(s1 &#x3D;&#x3D;&#x3D; s2);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined, null</span><br><span class="line">let un: undefined &#x3D; undefined;</span><br><span class="line">let nu: null &#x3D; null;</span><br><span class="line">num &#x3D; undefined; &#x2F;&#x2F; TS2322: Type &#39;undefined&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line">num &#x3D; null; &#x2F;&#x2F; TS2322: Type &#39;null&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void</span><br><span class="line">let noReturn &#x3D; () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; any</span><br><span class="line">let x;</span><br><span class="line">x &#x3D; 1;</span><br><span class="line">x &#x3D; [];</span><br><span class="line">x &#x3D; () &#x3D;&gt; &#123;&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; never</span><br><span class="line">let error &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    throw new Error(&#39;error&#39;);</span><br><span class="line">&#125;</span><br><span class="line">let endless &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    while(true) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.guoyucloud.com/2021/02/01/04%20|%20%E7%BC%96%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AATypeScript%E7%A8%8B%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -241,7 +427,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-02 14:26:22" itemprop="dateModified" datetime="2021-02-02T14:26:22+08:00">2021-02-02</time>
+                <time title="修改时间：2021-02-02 15:25:37" itemprop="dateModified" datetime="2021-02-02T15:25:37+08:00">2021-02-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -508,7 +694,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -583,13 +769,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">7k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">6 分钟</span>
 </div>
 
         

@@ -24,20 +24,20 @@
     var CONFIG = {"hostname":"www.guoyucloud.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="canvas-ribbon.js for NexT  Installation  If you want to use the CDN instead of clone this repo, please jump to the Step 3.  Step 1 &amp;rarr; Go to NexT dir  Change dir to NexT directory. There must be la">
-<meta property="og:type" content="website">
-<meta property="og:title" content="郭宇WEB前端技术栈">
-<meta property="og:url" content="https://www.guoyucloud.com/lib/canvas-ribbon/README.html">
+  <meta name="description" content="ES6 的数据类型 与 TypeScript 的数据类型   ES6 的数据类型 TypeScript 的数据类型     Boolean Boolean   Number Number   String String   Array Array   Function Function   Object Object   Symbol Symbol   undefined undefined">
+<meta property="og:type" content="article">
+<meta property="og:title" content="05 | 基本类型">
+<meta property="og:url" content="https://www.guoyucloud.com/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="郭宇WEB前端技术栈">
-<meta property="og:description" content="canvas-ribbon.js for NexT  Installation  If you want to use the CDN instead of clone this repo, please jump to the Step 3.  Step 1 &amp;rarr; Go to NexT dir  Change dir to NexT directory. There must be la">
+<meta property="og:description" content="ES6 的数据类型 与 TypeScript 的数据类型   ES6 的数据类型 TypeScript 的数据类型     Boolean Boolean   Number Number   String String   Array Array   Function Function   Object Object   Symbol Symbol   undefined undefined">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-12-14T00:42:19.274Z">
-<meta property="article:modified_time" content="2020-12-14T00:42:19.274Z">
+<meta property="article:published_time" content="2021-02-02T06:40:29.000Z">
+<meta property="article:modified_time" content="2021-02-02T09:00:29.540Z">
 <meta property="article:author" content="郭宇">
-<meta property="article:tag" content="GuoYuCloud, 郭宇, WEB, JAVA, PMI, 博客, blog">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.guoyucloud.com/lib/canvas-ribbon/README">
+<link rel="canonical" href="https://www.guoyucloud.com/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -45,13 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 <script src="/lib/fireworks.js"></script>
-  <title> | 郭宇WEB前端技术栈
-</title>
+  <title>05 | 基本类型 | 郭宇WEB前端技术栈</title>
   
 
 
@@ -206,84 +205,247 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">
-</h1>
-
-<div class="post-meta">
   
-  <ul class="breadcrumb">
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.guoyucloud.com/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar.png">
+      <meta itemprop="name" content="郭宇">
+      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭宇WEB前端技术栈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          05 | 基本类型
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-02-02 14:40:29 / 修改时间：17:00:29" itemprop="dateCreated datePublished" datetime="2021-02-02T14:40:29+08:00">2021-02-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
+                </span>
+            </span>
+
           
-            <li><a href="/lib/">LIB</a></li>
-            <li><a href="/lib/canvas-ribbon/">CANVAS-RIBBON</a></li>
-            <li>README</li>
-          
-  </ul>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
 
-</div>
+        </div>
+      </header>
 
-</header>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <ul>
+<li><h3 id="ES6-的数据类型-与-TypeScript-的数据类型"><a href="#ES6-的数据类型-与-TypeScript-的数据类型" class="headerlink" title="ES6 的数据类型 与 TypeScript 的数据类型"></a>ES6 的数据类型 与 TypeScript 的数据类型</h3><table style="text-align: center;">
+<thead>
+<tr>
+<th>ES6 的数据类型</th>
+<th>TypeScript 的数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td>Symbol</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td></td>
+<td>void</td>
+</tr>
+<tr>
+<td></td>
+<td>any</td>
+</tr>
+<tr>
+<td></td>
+<td>never</td>
+</tr>
+<tr>
+<td></td>
+<td>元组</td>
+</tr>
+<tr>
+<td></td>
+<td>枚举</td>
+</tr>
+<tr>
+<td></td>
+<td>高级类型</td>
+</tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3></li>
+</ul>
+<blockquote>
+<p>作用：相当于强类型语言中的类型声明<br>语法：(变量/函数):type</p>
+</blockquote>
+<ul>
+<li><h3 id="在src文件夹中新建datatype-ts文件，在index-ts中引入该文件"><a href="#在src文件夹中新建datatype-ts文件，在index-ts中引入该文件" class="headerlink" title="在src文件夹中新建datatype.ts文件，在index.ts中引入该文件"></a>在src文件夹中新建<code>datatype.ts</code>文件，在<code>index.ts</code>中引入该文件</h3></li>
+</ul>
+<blockquote>
+<p>index.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import &#39;.&#x2F;datatype&#39;; &#x2F;&#x2F; 新增这句话</span><br><span class="line"></span><br><span class="line">let hello : String &#x3D; &#39;Hello TypeScript&#39;;</span><br><span class="line">document.querySelectorAll(&#39;.app&#39;)[0].innerHTML &#x3D; &#39;hello&#39;;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>datatype.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 原始类型</span><br><span class="line">let bool: boolean &#x3D; true;</span><br><span class="line">let num: number | undefined | null &#x3D; 123;</span><br><span class="line">let str: string &#x3D; &#39;abc&#39;;</span><br><span class="line">&#x2F;&#x2F; str &#x3D; 123; &#x2F;&#x2F; TS2322: Type &#39;number&#39; is not assignable to type &#39;string&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 数组</span><br><span class="line">let arr1: number[] &#x3D; [1, 2, 3];</span><br><span class="line">let arr2: Array&lt;number | string&gt; &#x3D; [1, 2, 3, &#39;666&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 元组</span><br><span class="line">let tuple: [number, string] &#x3D; [0, &#39;1&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 函数</span><br><span class="line">let add &#x3D; (x: number, y:number) &#x3D;&gt; x + y;</span><br><span class="line">let compute: (x: number, y: number) &#x3D;&gt; number;</span><br><span class="line">compute &#x3D; (a, b) &#x3D;&gt; a + b;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">let obj: &#123;x: number, y: number&#125; &#x3D; &#123;x: 1, y: 2&#125;;</span><br><span class="line">obj.x &#x3D; 3;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; symbol</span><br><span class="line">let s1: symbol &#x3D; Symbol();</span><br><span class="line">let s2 &#x3D; Symbol();</span><br><span class="line">console.log(s1 &#x3D;&#x3D;&#x3D; s2);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined, null</span><br><span class="line">let un: undefined &#x3D; undefined;</span><br><span class="line">let nu: null &#x3D; null;</span><br><span class="line">num &#x3D; undefined; &#x2F;&#x2F; TS2322: Type &#39;undefined&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line">num &#x3D; null; &#x2F;&#x2F; TS2322: Type &#39;null&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void</span><br><span class="line">let noReturn &#x3D; () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; any</span><br><span class="line">let x;</span><br><span class="line">x &#x3D; 1;</span><br><span class="line">x &#x3D; [];</span><br><span class="line">x &#x3D; () &#x3D;&gt; &#123;&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; never</span><br><span class="line">let error &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    throw new Error(&#39;error&#39;);</span><br><span class="line">&#125;</span><br><span class="line">let endless &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    while(true) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>要是这篇文章帮到了您，期待您请我喝一杯咖啡。</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-      
-      <div class="post-body">
-          <h1 align="center"><a target="_blank" rel="noopener" href="https://github.com/hustcc/ribbon.js">canvas-ribbon.js</a> for <a target="_blank" rel="noopener" href="https://github.com/theme-next">NexT</a></h1>
-
-<h1 align="center">Installation</h1>
-
-<h2>If you want to use the CDN instead of clone this repo, please jump to the Step 3.</h2>
-
-<h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
-
-<p>Change dir to <strong>NexT</strong> directory. There must be <code>layout</code>, <code>source</code>, <code>languages</code> and other directories:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ ls</span><br><span class="line">_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
-
-<h2 align="center">Step 2 &rarr; Get module</h2>
-
-<p>Install module to <code>source/lib</code> directory:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-ribbon <span class="built_in">source</span>/lib/canvas-ribbon</span><br></pre></td></tr></table></figure>
-
-<h2 align="center">Step 3 &rarr; Set it up</h2>
-
-<p>Enable module in <strong>NexT</strong> <code>_config.yml</code> file:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">canvas_ribbon:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>And, if you wants to use the CDN, then need to set:</strong></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">canvas_ribbon:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js</span></span><br></pre></td></tr></table></figure>
-
-<h1 align="center">Update</h1>
-
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next/<span class="built_in">source</span>/lib/canvas-ribbon</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
-
+      <div style="display: inline-block;">
+        <img src="/images/pay/wechatpay.png" alt="郭宇 微信支付">
+        <p>微信支付</p>
       </div>
       
-      
-      
-    </div>
-    
-  <ul class="breadcrumb">
-          
-            <li><a href="/lib/">LIB</a></li>
-            <li><a href="/lib/canvas-ribbon/">CANVAS-RIBBON</a></li>
-            <li>README</li>
-          
-  </ul>
+      <div style="display: inline-block;">
+        <img src="/images/pay/alipay.png" alt="郭宇 支付宝">
+        <p>支付宝</p>
+      </div>
 
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>郭宇
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.guoyucloud.com/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" title="05 | 基本类型">https://www.guoyucloud.com/2021/02/02/05-基本类型/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/ts/" rel="tag"><i class="fa fa-tag"></i> TypeScript</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/01/04%20%7C%20%E7%BC%96%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AATypeScript%E7%A8%8B%E5%BA%8F/" rel="prev" title="04 | 编写你的第一个TypeScript程序">
+      <i class="fa fa-chevron-left"></i> 04 | 编写你的第一个TypeScript程序
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
 
 
           </div>
@@ -335,7 +497,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">canvas-ribbon.js for NexT</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">If you want to use the CDN instead of clone this repo, please jump to the Step 3.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.2.</span> <span class="nav-text">Step 1 &amp;rarr; Go to NexT dir</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.3.</span> <span class="nav-text">Step 2 &amp;rarr; Get module</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.4.</span> <span class="nav-text">Step 3 &amp;rarr; Set it up</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">Update</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6-%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E4%B8%8E-TypeScript-%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">ES6 的数据类型 与 TypeScript 的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3"><span class="nav-number">2.</span> <span class="nav-text">类型注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8src%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%96%B0%E5%BB%BAdatatype-ts%E6%96%87%E4%BB%B6%EF%BC%8C%E5%9C%A8index-ts%E4%B8%AD%E5%BC%95%E5%85%A5%E8%AF%A5%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">在src文件夹中新建datatype.ts文件，在index.ts中引入该文件</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -550,7 +712,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'hexo-io-blog-comments',
       owner       : 'guoyucloud',
       admin       : ['guoyucloud'],
-      id          : 'f8c4d14cc374492c95cbb65de7dc54a6',
+      id          : 'c99969783d87c153d10cacdbb4dc6c4d',
         language: 'zh-CN',
       distractionFreeMode: true
     });
