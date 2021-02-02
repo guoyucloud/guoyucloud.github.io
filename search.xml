@@ -47,6 +47,13 @@
 <li><h3 id="运行npm-run-build，可以看到目录下生成了dist文件夹，这就打包好了"><a href="#运行npm-run-build，可以看到目录下生成了dist文件夹，这就打包好了" class="headerlink" title="运行npm run build，可以看到目录下生成了dist文件夹，这就打包好了"></a>运行<code>npm run build</code>，可以看到目录下生成了<code>dist</code>文件夹，这就打包好了</h3></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
   </entry>
   <entry>
     <title>欢迎来到GuoYuCloud</title>
