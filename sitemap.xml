@@ -60,14 +60,14 @@
 
   
   <url>
-    <loc>https://www.guoyu.ren/tags/ts/</loc>
+    <loc>https://www.guoyu.ren/tags/OTHER/</loc>
     <lastmod>2022-02-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/tags/OTHER/</loc>
+    <loc>https://www.guoyu.ren/tags/ts/</loc>
     <lastmod>2022-02-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -76,14 +76,14 @@
 
   
   <url>
-    <loc>https://www.guoyu.ren/categories/learning/</loc>
+    <loc>https://www.guoyu.ren/categories/other/</loc>
     <lastmod>2022-02-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/categories/other/</loc>
+    <loc>https://www.guoyu.ren/categories/learning/</loc>
     <lastmod>2022-02-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
