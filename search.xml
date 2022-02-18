@@ -161,20 +161,6 @@
       </tags>
   </entry>
   <entry>
-    <title>欢迎来到GuoYu的博客</title>
-    <url>/2020/12/17/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<blockquote>
-<p>本站主页：<br><a href="https://www.guoyu.ren/">https://www.guoyu.ren/</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>OTHER</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>06 | 枚举类型</title>
     <url>/2021/02/02/06-%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<ul>
@@ -197,6 +183,20 @@
       </categories>
       <tags>
         <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到GuoYu的博客</title>
+    <url>/2020/12/17/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>本站主页：<br><a href="https://www.guoyu.ren/">https://www.guoyu.ren/</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>OTHER</tag>
       </tags>
   </entry>
 </search>
