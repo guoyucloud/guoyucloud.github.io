@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.guoyu.ren/2022/02/25/07-%E6%8E%A5%E5%8F%A3%EF%BC%881%EF%BC%89%EF%BC%9A%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3/</loc>
+    
+    <lastmod>2022-02-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.guoyu.ren/2021/02/02/06%20|%20%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</loc>
+    
+    <lastmod>2022-02-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.guoyu.ren/about/index.html</loc>
     
     <lastmod>2022-02-17</lastmod>
@@ -16,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/2021/02/02/06-%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</loc>
-    
-    <lastmod>2022-02-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.guoyu.ren/tags/index.html</loc>
     
     <lastmod>2021-09-03</lastmod>
@@ -30,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</loc>
+    <loc>https://www.guoyu.ren/2021/02/02/05%20|%20%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</loc>
     
     <lastmod>2021-09-03</lastmod>
     
@@ -53,7 +60,7 @@
 
   <url>
     <loc>https://www.guoyu.ren/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,14 +68,14 @@
   
   <url>
     <loc>https://www.guoyu.ren/tags/OTHER/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/tags/ts/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -77,21 +84,21 @@
   
   <url>
     <loc>https://www.guoyu.ren/categories/other/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/web/</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
