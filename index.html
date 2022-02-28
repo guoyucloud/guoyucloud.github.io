@@ -211,6 +211,235 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar.jpeg">
+      <meta itemprop="name" content="郭宇">
+      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WEB前端技术">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/" class="post-title-link" itemprop="url">16 | 类型检查机制（2）：类型兼容性</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-01 00:31:36 / 修改时间：01:00:00" itemprop="dateCreated datePublished" datetime="2022-03-01T00:31:36+08:00">2022-03-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/TypeScript/" itemprop="url" rel="index"><span itemprop="name">TypeScript</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>114</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><code>advanced1.ts</code></p>
+<h3 id="类型兼容性："><a href="#类型兼容性：" class="headerlink" title="类型兼容性："></a><strong>类型兼容性：</strong></h3><blockquote>
+<p><strong>当一个类型Y可以被赋值给另一个类型X时，我们就可以说类型X兼容类型Y</strong></p>
+<p><strong>X兼容Y:X(目标类型) &#x3D; Y(源类型)</strong></p>
+</blockquote>
+<h3 id="口诀："><a href="#口诀：" class="headerlink" title="口诀："></a><strong>口诀：</strong></h3><blockquote>
+<p><strong>结构之间兼容：成员少的兼容成员多的</strong></p>
+<p><strong>函数之间兼容：参数多的兼容参数少的</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/02/28/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar.jpeg">
+      <meta itemprop="name" content="郭宇">
+      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WEB前端技术">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/02/28/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/" class="post-title-link" itemprop="url">15 | 类型检查机制（1）：类型推断</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-02-28 23:51:12" itemprop="dateCreated datePublished" datetime="2022-02-28T23:51:12+08:00">2022-02-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-01 00:59:03" itemprop="dateModified" datetime="2022-03-01T00:59:03+08:00">2022-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/web/TypeScript/" itemprop="url" rel="index"><span itemprop="name">TypeScript</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>477</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><code>advanced.ts</code></p>
+<h3 id="类型检查机制："><a href="#类型检查机制：" class="headerlink" title="类型检查机制："></a><strong>类型检查机制：</strong></h3><blockquote>
+<p><strong>TypeScript编译器在做检查时，所秉承的一些原则，以及表现出的一些行为。</strong></p>
+<p><strong>作用：辅助开发提高开发效率。</strong></p>
+<ul>
+<li><strong>类型推断</strong></li>
+<li><strong>类型兼容性</strong></li>
+<li><strong>类型保护</strong></li>
+</ul>
+</blockquote>
+<h3 id="类型推断："><a href="#类型推断：" class="headerlink" title="类型推断："></a><strong>类型推断：</strong></h3><blockquote>
+<p><strong>不需要指定变量的类型（函数的返回值类型）,TypeScript可以根据某些规则自动的为其推断出一个类型。</strong></p>
+<ul>
+<li><strong>基础类型推断</strong></li>
+<li><strong>最佳通用类型推断</strong></li>
+<li><strong>上下文类型推断</strong></li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; 1;</span><br><span class="line">let b &#x3D; [1, null];</span><br><span class="line"></span><br><span class="line">let c &#x3D; (x &#x3D; 1) &#x3D;&gt; x + 1;</span><br><span class="line"></span><br><span class="line">window.onkeydown &#x3D; (event) &#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F; console.log(event.button);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Foo &#123;</span><br><span class="line">    bar: number</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; let foo &#x3D; &#123;&#125; as Foo;</span><br><span class="line">let foo: Foo &#x3D; &#123;</span><br><span class="line">    bar: 1</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; foo.bar &#x3D; 1;</span><br></pre></td></tr></table></figure>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/28/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/02/27/TypeScript/21-%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%EF%BC%884%EF%BC%89%EF%BC%9A%E6%9D%A1%E4%BB%B6%E7%B1%BB%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -711,206 +940,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/02/27/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar/avatar.jpeg">
-      <meta itemprop="name" content="郭宇">
-      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WEB前端技术">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/27/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/" class="post-title-link" itemprop="url">16 | 类型检查机制（2）：类型兼容性</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-02-27 14:58:36" itemprop="dateCreated datePublished" datetime="2022-02-27T14:58:36+08:00">2022-02-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/web/TypeScript/" itemprop="url" rel="index"><span itemprop="name">TypeScript</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>7</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>xxx.ts</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/02/27/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/02/27/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar/avatar.jpeg">
-      <meta itemprop="name" content="郭宇">
-      <meta itemprop="description" content="多听，少说，接受每一个人的责难，但是保留你的最后裁决。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WEB前端技术">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/27/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/" class="post-title-link" itemprop="url">15 | 类型检查机制（1）：类型推断</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-02-27 14:58:12" itemprop="dateCreated datePublished" datetime="2022-02-27T14:58:12+08:00">2022-02-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/" itemprop="url" rel="index"><span itemprop="name">学习路径</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/web/" itemprop="url" rel="index"><span itemprop="name">前端工程师</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/web/TypeScript/" itemprop="url" rel="index"><span itemprop="name">TypeScript</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>7</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>xxx.ts</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/02/27/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.guoyu.ren/2022/02/27/TypeScript/14-%E6%B3%9B%E5%9E%8B%EF%BC%882%EF%BC%89%EF%BC%9A%E6%B3%9B%E5%9E%8B%E7%B1%BB%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -942,7 +971,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:13:51" itemprop="dateModified" datetime="2022-02-28T18:13:51+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:00:15" itemprop="dateModified" datetime="2022-03-01T01:00:15+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -987,19 +1016,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>generics1.ts</p>
-</blockquote>
-<ul>
-<li><strong>泛型的好处：</strong><blockquote>
+          <p><code>generics1.ts</code></p>
+<h3 id="泛型的好处："><a href="#泛型的好处：" class="headerlink" title="泛型的好处："></a><strong>泛型的好处：</strong></h3><blockquote>
 <ol>
 <li>函数和类可以轻松地支持多种类型，增强程序的扩展性</li>
 <li>不必写多条函数重载</li>
 <li>灵活控制类型之间的约束</li>
 </ol>
 </blockquote>
-</li>
-</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Log1&lt;T&gt; &#123;</span><br><span class="line">    run(value: T) &#123;</span><br><span class="line">        console.log(value);</span><br><span class="line">        return value;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let log1 &#x3D; new Log1&lt;number&gt;()</span><br><span class="line">log1.run(1)</span><br><span class="line">let log2 &#x3D; new Log1()</span><br><span class="line">log2.run(&#39;1&#39;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">interface Length &#123;</span><br><span class="line">    length: number</span><br><span class="line">&#125;</span><br><span class="line">function log3&lt;T extends Length&gt;(value: T): T &#123;</span><br><span class="line">    console.log(value, value.length);</span><br><span class="line">    return value;</span><br><span class="line">&#125;</span><br><span class="line">log3([1])</span><br><span class="line">log3(&#39;123&#39;)</span><br><span class="line">log3(&#123;length: 1&#125;)</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -1059,7 +1083,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:13:43" itemprop="dateModified" datetime="2022-02-28T18:13:43+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:02:20" itemprop="dateModified" datetime="2022-03-01T01:02:20+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1104,9 +1128,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>generics.ts</p>
-</blockquote>
+          <p><code>generics.ts</code></p>
 <ul>
 <li><strong>泛型：不预先确定的数据类型，具体的类型在使用的时候才能确定</strong></li>
 </ul>
@@ -1169,7 +1191,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:18:39" itemprop="dateModified" datetime="2022-02-28T18:18:39+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:02:39" itemprop="dateModified" datetime="2022-03-01T01:02:39+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1214,9 +1236,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>class-interface.ts</p>
-</blockquote>
+          <p><code>class-interface.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">interface Human &#123;</span><br><span class="line">    &#x2F;&#x2F; new (name: string): void;</span><br><span class="line">    name: string;</span><br><span class="line">    eat(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Asian implements Human &#123;</span><br><span class="line">    constructor(name:string)&#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    name: string;</span><br><span class="line">    eat()&#123;&#125;;</span><br><span class="line">    sleep()&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Man extends Human&#123;</span><br><span class="line">    run(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Child &#123;</span><br><span class="line">    cry():void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Boy extends Man, Child&#123;&#125;</span><br><span class="line"></span><br><span class="line">let boy: Boy &#x3D; &#123;</span><br><span class="line">    name: &#39;&#39;,</span><br><span class="line">    run()&#123;&#125;,</span><br><span class="line">    eat()&#123;&#125;,</span><br><span class="line">    cry()&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Auto &#123;</span><br><span class="line">    state &#x3D; 1</span><br><span class="line">    &#x2F;&#x2F; private state2 &#x3D; 0</span><br><span class="line">&#125;</span><br><span class="line">interface AutoInterface extends Auto&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">class C implements AutoInterface&#123;</span><br><span class="line">    state &#x3D; 1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Bus extends Auto implements AutoInterface&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -1395,7 +1415,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

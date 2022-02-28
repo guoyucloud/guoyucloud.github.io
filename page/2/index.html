@@ -234,10 +234,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-26 22:25:32 / 修改时间：23:58:42" itemprop="dateCreated datePublished" datetime="2022-02-26T22:25:32+08:00">2022-02-26</time>
+              <time title="创建时间：2022-02-26 22:25:32" itemprop="dateCreated datePublished" datetime="2022-02-26T22:25:32+08:00">2022-02-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-01 01:03:03" itemprop="dateModified" datetime="2022-03-01T01:03:03+08:00">2022-03-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -281,9 +287,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>class1.ts</p>
-</blockquote>
+          <p><code>class1.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">abstract class Animal &#123;</span><br><span class="line">    eat()&#123;</span><br><span class="line">        console.log(&#39;eat&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    abstract sleep(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog1 extends Animal&#123;</span><br><span class="line">    constructor(name: string) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    name: string</span><br><span class="line">    run()&#123;&#125;</span><br><span class="line">    sleep()&#123;</span><br><span class="line">        console.log(&#39;dog sleep&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let dog1 &#x3D; new Dog1(&#39;wangwang&#39;);</span><br><span class="line">dog1.eat();</span><br><span class="line"></span><br><span class="line">class Cat extends Animal&#123;</span><br><span class="line">sleep()&#123;</span><br><span class="line">    console.log(&#39;Cat sleep&#39;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">let cat &#x3D; new Cat();</span><br><span class="line"></span><br><span class="line">let animals: Animal[] &#x3D; [dog1, cat]</span><br><span class="line">animals.forEach(i&#x3D;&gt;&#123;</span><br><span class="line">    i.sleep();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">class WorkFlow &#123;</span><br><span class="line">    step1()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">    step2()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new WorkFlow().step1().step2();</span><br><span class="line"></span><br><span class="line">class Myflow extends WorkFlow&#123;</span><br><span class="line">    next()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new Myflow().next().step1().step2();</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -335,10 +339,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-26 22:24:07 / 修改时间：23:58:42" itemprop="dateCreated datePublished" datetime="2022-02-26T22:24:07+08:00">2022-02-26</time>
+              <time title="创建时间：2022-02-26 22:24:07" itemprop="dateCreated datePublished" datetime="2022-02-26T22:24:07+08:00">2022-02-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-01 01:03:03" itemprop="dateModified" datetime="2022-03-01T01:03:03+08:00">2022-03-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -382,9 +392,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>class.ts</p>
-</blockquote>
+          <p><code>class.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">class Dog&#123;</span><br><span class="line">    constructor(name: string) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    public name: string &#x3D; &#39;dog&#39;;</span><br><span class="line">    run()&#123;&#125;</span><br><span class="line">    private pri()&#123;&#125;</span><br><span class="line">    protected pro()&#123;&#125;</span><br><span class="line">    readonly legs: number &#x3D; 4</span><br><span class="line">    static food: string &#x3D; &#39;bones&#39;</span><br><span class="line">&#125;</span><br><span class="line">console.log(Dog.prototype);</span><br><span class="line">let dog &#x3D; new Dog(&#39;wangwang&#39;);</span><br><span class="line">console.log(dog)</span><br><span class="line">&#x2F;&#x2F; dog.pri()</span><br><span class="line">&#x2F;&#x2F; dog.pro()</span><br><span class="line">console.log(Dog.food)</span><br><span class="line"></span><br><span class="line">class Husky extends Dog &#123;</span><br><span class="line">    constructor(name: string, public color: string) &#123;</span><br><span class="line">        super(name);</span><br><span class="line">        this.color &#x3D; color;</span><br><span class="line">        &#x2F;&#x2F; this.pri()</span><br><span class="line">        this.pro();</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; color: string;</span><br><span class="line">&#125;</span><br><span class="line">console.log(Husky.food)</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -444,7 +452,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-26 23:58:42" itemprop="dateModified" datetime="2022-02-26T23:58:42+08:00">2022-02-26</time>
+                <time title="修改时间：2022-03-01 01:03:03" itemprop="dateModified" datetime="2022-03-01T01:03:03+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -489,9 +497,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>function.ts</p>
-</blockquote>
+          <p><code>function.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 函数定义</span><br><span class="line">function add1(x:number, y:number)&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let add2: (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">type add3 &#x3D; (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">interface add4&#123;</span><br><span class="line">    (x:number,y:number): number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; add1(1,2,3)</span><br><span class="line"></span><br><span class="line">function add5(x:number,y?:number)&#123;</span><br><span class="line">    return y?x+y:x;</span><br><span class="line">&#125;</span><br><span class="line">add5(1)</span><br><span class="line"></span><br><span class="line">function add6(x:number,y&#x3D;0,z:number,q&#x3D;1)&#123;</span><br><span class="line">    return x + y + z + q;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add6(1,undefined, 3));</span><br><span class="line"></span><br><span class="line">function add7(x:number,...rest:number[])&#123;</span><br><span class="line">    return x + rest.reduce((pre, cur)&#x3D;&gt; pre +cur) ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(add7(1,2,3,4,5))</span><br><span class="line"></span><br><span class="line">function add8(...rest: number[]): number;</span><br><span class="line">function add8(...rest: string[]): string;</span><br><span class="line">function add8(...rest: any[]): any&#123;</span><br><span class="line">    let first &#x3D; rest[0];</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;string&#39;)&#123;</span><br><span class="line">        return rest.join(&#39;&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;number&#39;)&#123;</span><br><span class="line">        return rest.reduce((pre, cur)&#x3D;&gt; pre + cur);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add8(1,2,3));</span><br><span class="line">console.log(add8(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;));</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -551,7 +557,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-26 23:58:42" itemprop="dateModified" datetime="2022-02-26T23:58:42+08:00">2022-02-26</time>
+                <time title="修改时间：2022-03-01 01:04:14" itemprop="dateModified" datetime="2022-03-01T01:04:14+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -596,9 +602,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>interface1.ts</p>
-</blockquote>
+          <p><code>interface1.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; let add: (x:number,y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; interface Add&#123;</span><br><span class="line">&#x2F;&#x2F;     (x:number, y:number): number</span><br><span class="line">&#x2F;&#x2F; &#125;</span><br><span class="line"></span><br><span class="line">type  Adds &#x3D; (x: number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">let adds: Adds &#x3D; (a, b) &#x3D;&gt; a + b</span><br><span class="line"></span><br><span class="line">interface Lib&#123;</span><br><span class="line">    ():void;</span><br><span class="line">    version: string;</span><br><span class="line">    doSomething():void</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getLib()&#123;</span><br><span class="line">    let lib: Lib &#x3D; (() &#x3D;&gt; &#123;&#125;) as Lib</span><br><span class="line">    lib.version &#x3D; &#39;1.0&#39;;</span><br><span class="line">    lib.doSomething &#x3D; () &#x3D;&gt; &#123;&#125;</span><br><span class="line">    return lib;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let lib1 &#x3D; getLib();</span><br><span class="line">lib1();</span><br><span class="line">lib1.doSomething();</span><br><span class="line"></span><br><span class="line">let lib2 &#x3D; getLib();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -658,7 +662,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-26 23:58:42" itemprop="dateModified" datetime="2022-02-26T23:58:42+08:00">2022-02-26</time>
+                <time title="修改时间：2022-03-01 01:04:14" itemprop="dateModified" datetime="2022-03-01T01:04:14+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -703,9 +707,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>interface.ts</p>
-</blockquote>
+          <p><code>interface.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">interface List &#123;</span><br><span class="line">    readonly id: number,</span><br><span class="line">    name:string,</span><br><span class="line">    &#x2F;&#x2F; [x: string]: any;</span><br><span class="line">    age?: number</span><br><span class="line">&#125;</span><br><span class="line">interface Result &#123;</span><br><span class="line">    data:List[]</span><br><span class="line">&#125;</span><br><span class="line">function render(result: Result) &#123;</span><br><span class="line">  result.data.forEach((value) &#x3D;&gt; &#123;</span><br><span class="line">    console.log(value.id, value.name);</span><br><span class="line">    if (value.age) &#123;</span><br><span class="line">      console.log(value.age);</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; value.id++</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">const result &#x3D; &#123;</span><br><span class="line">  &#39;data&#39;: [</span><br><span class="line">    &#123; &#39;id&#39;: 1, &#39;name&#39;: &#39;A&#39;, &#39;sex&#39;: &#39;male&#39; &#125;,</span><br><span class="line">    &#123; &#39;id&#39;: 2, &#39;name&#39;: &#39;B&#39;, &#39;age&#39;: 10 &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br><span class="line">render(result);</span><br><span class="line"></span><br><span class="line">interface StringArray&#123;</span><br><span class="line">  [index: number]: string</span><br><span class="line">&#125;</span><br><span class="line">let chars: StringArray &#x3D; [&#39;A&#39;, &#39;B&#39;]</span><br><span class="line"></span><br><span class="line">interface Names&#123;</span><br><span class="line">  [x: string]: any;</span><br><span class="line">  &#x2F;&#x2F; y: number;</span><br><span class="line">  [z: number]: number</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; render(&lt;Result&gt;&#123;</span><br><span class="line">&#x2F;&#x2F;     &#39;data&#39;: [</span><br><span class="line">&#x2F;&#x2F;         &#123; &#39;id&#39;: 1, &#39;name&#39;: &#39;A&#39;, &#39;sex&#39;: &#39;male&#39; &#125;,</span><br><span class="line">&#x2F;&#x2F;         &#123; &#39;id&#39;: 2, &#39;name&#39;: &#39;B&#39; &#125;</span><br><span class="line">&#x2F;&#x2F;     ]</span><br><span class="line">&#x2F;&#x2F; &#125; as Result);</span><br><span class="line">&#x2F;&#x2F; render(&lt;Result&gt;&#123;</span><br><span class="line">&#x2F;&#x2F;   &#39;data&#39;: [</span><br><span class="line">&#x2F;&#x2F;     &#123; &#39;id&#39;: 1, &#39;name&#39;: &#39;A&#39;, &#39;sex&#39;: &#39;male&#39; &#125;,</span><br><span class="line">&#x2F;&#x2F;     &#123; &#39;id&#39;: 2, &#39;name&#39;: &#39;B&#39; &#125;</span><br><span class="line">&#x2F;&#x2F;   ]</span><br><span class="line">&#x2F;&#x2F; &#125;);</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -765,7 +767,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:17:10" itemprop="dateModified" datetime="2022-02-28T18:17:10+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:04:14" itemprop="dateModified" datetime="2022-03-01T01:04:14+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -813,9 +815,7 @@
           <ul>
 <li><strong>在src文件夹中新建<code>enum.ts</code>文件，在<code>index.ts</code>中引入该文件</strong></li>
 </ul>
-<blockquote>
-<p>index.ts</p>
-</blockquote>
+<p><code>index.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &#39;.&#x2F;datatype&#39;;</span><br><span class="line">import &#39;.&#x2F;enum&#39;; &#x2F;&#x2F; 新增这句话</span><br><span class="line">let hello : String &#x3D; &#39;Hello TypeScript&#39;;</span><br><span class="line">document.querySelectorAll(&#39;.app&#39;)[0].innerHTML &#x3D; &#39;hello&#39;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -881,7 +881,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:17:10" itemprop="dateModified" datetime="2022-02-28T18:17:10+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:05:35" itemprop="dateModified" datetime="2022-03-01T01:05:35+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -926,8 +926,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ul>
-<li><h3 id="ES6-的数据类型-与-TypeScript-的数据类型"><a href="#ES6-的数据类型-与-TypeScript-的数据类型" class="headerlink" title="ES6 的数据类型 与 TypeScript 的数据类型"></a>ES6 的数据类型 与 TypeScript 的数据类型</h3><table style="text-align: center;">
+          <blockquote>
+<p><strong>ES6 的数据类型 与 TypeScript 的数据类型</strong></p>
+</blockquote>
+<table style="text-align: center;">
 <thead>
 <tr>
 <th>ES6 的数据类型</th>
@@ -998,24 +1000,18 @@
 </tbody>
 </table>
 
-</li>
-<li><p><strong>类型注解</strong></p>
-</li>
-</ul>
+
+<p>###类型注解</p>
 <blockquote>
 <p>作用：相当于强类型语言中的类型声明<br>语法：(变量&#x2F;函数):type</p>
 </blockquote>
 <ul>
 <li><strong>在src文件夹中新建<code>datatype.ts</code>文件，在<code>index.ts</code>中引入该文件</strong></li>
 </ul>
-<blockquote>
-<p>index.ts</p>
-</blockquote>
+<p><code>index.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import &#39;.&#x2F;datatype&#39;; &#x2F;&#x2F; 新增这句话</span><br><span class="line"></span><br><span class="line">let hello : String &#x3D; &#39;Hello TypeScript&#39;;</span><br><span class="line">document.querySelectorAll(&#39;.app&#39;)[0].innerHTML &#x3D; &#39;hello&#39;;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>datatype.ts</p>
-</blockquote>
+<p><code>datatype.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 原始类型</span><br><span class="line">let bool: boolean &#x3D; true;</span><br><span class="line">let num: number | undefined | null &#x3D; 123;</span><br><span class="line">let str: string &#x3D; &#39;abc&#39;;</span><br><span class="line">&#x2F;&#x2F; str &#x3D; 123; &#x2F;&#x2F; TS2322: Type &#39;number&#39; is not assignable to type &#39;string&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 数组</span><br><span class="line">let arr1: number[] &#x3D; [1, 2, 3];</span><br><span class="line">let arr2: Array&lt;number | string&gt; &#x3D; [1, 2, 3, &#39;666&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 元组</span><br><span class="line">let tuple: [number, string] &#x3D; [0, &#39;1&#39;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 函数</span><br><span class="line">let add &#x3D; (x: number, y:number) &#x3D;&gt; x + y;</span><br><span class="line">let compute: (x: number, y: number) &#x3D;&gt; number;</span><br><span class="line">compute &#x3D; (a, b) &#x3D;&gt; a + b;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">let obj: &#123;x: number, y: number&#125; &#x3D; &#123;x: 1, y: 2&#125;;</span><br><span class="line">obj.x &#x3D; 3;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; symbol</span><br><span class="line">let s1: symbol &#x3D; Symbol();</span><br><span class="line">let s2 &#x3D; Symbol();</span><br><span class="line">console.log(s1 &#x3D;&#x3D;&#x3D; s2);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined, null</span><br><span class="line">let un: undefined &#x3D; undefined;</span><br><span class="line">let nu: null &#x3D; null;</span><br><span class="line">num &#x3D; undefined; &#x2F;&#x2F; TS2322: Type &#39;undefined&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line">num &#x3D; null; &#x2F;&#x2F; TS2322: Type &#39;null&#39; is not assignable to type &#39;number&#39;.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void</span><br><span class="line">let noReturn &#x3D; () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; any</span><br><span class="line">let x;</span><br><span class="line">x &#x3D; 1;</span><br><span class="line">x &#x3D; [];</span><br><span class="line">x &#x3D; () &#x3D;&gt; &#123;&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; never</span><br><span class="line">let error &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    throw new Error(&#39;error&#39;);</span><br><span class="line">&#125;</span><br><span class="line">let endless &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    while(true) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           <!--noindex-->
@@ -1075,7 +1071,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 18:16:26" itemprop="dateModified" datetime="2022-02-28T18:16:26+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:07:08" itemprop="dateModified" datetime="2022-03-01T01:07:08+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1120,7 +1116,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ul>
+          <ol>
 <li><p><strong>初始化package.json</strong><br><code>npm init -y</code></p>
 </li>
 <li><p><strong>全局安装TypeScript</strong><br><code>npm i typescript -g</code></p>
@@ -1176,7 +1172,7 @@
 </li>
 <li><p><strong>运行<code>npm run build</code>，可以看到目录下生成了<code>dist</code>文件夹，这就打包好了</strong></p>
 </li>
-</ul>
+</ol>
 
           <!--noindex-->
             <div class="post-button">
@@ -1235,7 +1231,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-28 15:49:08" itemprop="dateModified" datetime="2022-02-28T15:49:08+08:00">2022-02-28</time>
+                <time title="修改时间：2022-03-01 01:08:50" itemprop="dateModified" datetime="2022-03-01T01:08:50+08:00">2022-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1275,18 +1271,21 @@
           <blockquote>
 <p>本站主页：<br><a href="https://www.guoyu.ren/">https://www.guoyu.ren/</a></p>
 </blockquote>
-<p><strong>添加next主题【已使用】</strong></p>
+<ul>
+<li><p><strong>添加next主题【已使用】</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<p><strong>设置顶部页面加载进度条【已使用】</strong></p>
+</li>
+<li><p><strong>设置顶部页面加载进度条【已使用】</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br></pre></td></tr></table></figure>
-
-<p><strong>Canvas-nest 背景【已使用】</strong></p>
+</li>
+<li><p><strong>Canvas-nest 背景【已使用】</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Canvas-nest</span><br><span class="line"># Dependencies: https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest</span><br><span class="line">canvas_nest:</span><br><span class="line">  enable: true</span><br><span class="line">  onmobile: false # 是否在手机上显示</span><br><span class="line">  color: &quot;0,0,255&quot; # RGB颜色值, 用 &#39;,&#39; 分隔</span><br><span class="line">  opacity: 0.5 # 线条透明度: 0~1</span><br><span class="line">  zIndex: -1 # 背景的 z-index 属性值</span><br><span class="line">  count: 99 # 线条数量</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Canvas-ribbon 背景【未使用】</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-ribbon source&#x2F;lib&#x2F;canvas-ribbon</span><br></pre></td></tr></table></figure></li>
+</ul>
 
-<p><strong>Canvas-ribbon 背景【未使用】</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-ribbon source&#x2F;lib&#x2F;canvas-ribbon</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/12/17/index/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/#more" rel="contents">
@@ -1458,7 +1457,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

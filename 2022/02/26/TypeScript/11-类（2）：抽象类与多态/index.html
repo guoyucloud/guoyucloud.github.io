@@ -25,15 +25,15 @@
     var CONFIG = {"hostname":"www.guoyu.ren","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="class1.ts  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849abstract class Animal &amp;#123;    eat()&amp;#123;        console.log(&#39;eat&#39;);    &amp;#125;    abstrac">
+  <meta name="description" content="class1.ts 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849abstract class Animal &amp;#123;    eat()&amp;#123;        console.log(&#39;eat&#39;);    &amp;#125;    abstract">
 <meta property="og:type" content="article">
 <meta property="og:title" content="11 | 类（2）：抽象类与多态">
 <meta property="og:url" content="https://www.guoyu.ren/2022/02/26/TypeScript/11-%E7%B1%BB%EF%BC%882%EF%BC%89%EF%BC%9A%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E5%A4%9A%E6%80%81/index.html">
 <meta property="og:site_name" content="WEB前端技术">
-<meta property="og:description" content="class1.ts  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849abstract class Animal &amp;#123;    eat()&amp;#123;        console.log(&#39;eat&#39;);    &amp;#125;    abstrac">
+<meta property="og:description" content="class1.ts 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849abstract class Animal &amp;#123;    eat()&amp;#123;        console.log(&#39;eat&#39;);    &amp;#125;    abstract">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-26T14:25:32.000Z">
-<meta property="article:modified_time" content="2022-02-26T15:58:42.845Z">
+<meta property="article:modified_time" content="2022-02-28T17:03:03.409Z">
 <meta property="article:author" content="郭宇">
 <meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
@@ -236,10 +236,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-26 22:25:32 / 修改时间：23:58:42" itemprop="dateCreated datePublished" datetime="2022-02-26T22:25:32+08:00">2022-02-26</time>
+              <time title="创建时间：2022-02-26 22:25:32" itemprop="dateCreated datePublished" datetime="2022-02-26T22:25:32+08:00">2022-02-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-01 01:03:03" itemprop="dateModified" datetime="2022-03-01T01:03:03+08:00">2022-03-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -290,9 +296,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>class1.ts</p>
-</blockquote>
+        <p><code>class1.ts</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">abstract class Animal &#123;</span><br><span class="line">    eat()&#123;</span><br><span class="line">        console.log(&#39;eat&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    abstract sleep(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog1 extends Animal&#123;</span><br><span class="line">    constructor(name: string) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    name: string</span><br><span class="line">    run()&#123;&#125;</span><br><span class="line">    sleep()&#123;</span><br><span class="line">        console.log(&#39;dog sleep&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let dog1 &#x3D; new Dog1(&#39;wangwang&#39;);</span><br><span class="line">dog1.eat();</span><br><span class="line"></span><br><span class="line">class Cat extends Animal&#123;</span><br><span class="line">sleep()&#123;</span><br><span class="line">    console.log(&#39;Cat sleep&#39;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">let cat &#x3D; new Cat();</span><br><span class="line"></span><br><span class="line">let animals: Animal[] &#x3D; [dog1, cat]</span><br><span class="line">animals.forEach(i&#x3D;&gt;&#123;</span><br><span class="line">    i.sleep();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">class WorkFlow &#123;</span><br><span class="line">    step1()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">    step2()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new WorkFlow().step1().step2();</span><br><span class="line"></span><br><span class="line">class Myflow extends WorkFlow&#123;</span><br><span class="line">    next()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new Myflow().next().step1().step2();</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -509,7 +513,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
