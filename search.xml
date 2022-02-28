@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>04 | 编写你的第一个TypeScript程序</title>
-    <url>/2021/02/01/04-%E7%BC%96%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AATypeScript%E7%A8%8B%E5%BA%8F/</url>
+    <url>/2021/02/01/TypeScript/04-%E7%BC%96%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AATypeScript%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[<ul>
 <li><h3 id="初始化package-json"><a href="#初始化package-json" class="headerlink" title="初始化package.json"></a>初始化package.json</h3><p><code>npm init -y</code></p>
 </li>
@@ -58,7 +58,7 @@
   </entry>
   <entry>
     <title>05 | 基本类型</title>
-    <url>/2021/02/02/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
+    <url>/2021/02/02/TypeScript/05-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<ul>
 <li><h3 id="ES6-的数据类型-与-TypeScript-的数据类型"><a href="#ES6-的数据类型-与-TypeScript-的数据类型" class="headerlink" title="ES6 的数据类型 与 TypeScript 的数据类型"></a>ES6 的数据类型 与 TypeScript 的数据类型</h3><table style="text-align: center;">
 <thead>
@@ -131,14 +131,11 @@
 </tbody>
 </table>
 
-
 </li>
-</ul>
-<ul>
 <li><h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3></li>
 </ul>
 <blockquote>
-<p>作用：相当于强类型语言中的类型声明<br>语法：(变量/函数):type</p>
+<p>作用：相当于强类型语言中的类型声明<br>语法：(变量&#x2F;函数):type</p>
 </blockquote>
 <ul>
 <li><h3 id="在src文件夹中新建datatype-ts文件，在index-ts中引入该文件"><a href="#在src文件夹中新建datatype-ts文件，在index-ts中引入该文件" class="headerlink" title="在src文件夹中新建datatype.ts文件，在index.ts中引入该文件"></a>在src文件夹中新建<code>datatype.ts</code>文件，在<code>index.ts</code>中引入该文件</h3></li>
@@ -164,7 +161,7 @@
   </entry>
   <entry>
     <title>06 | 枚举类型</title>
-    <url>/2021/02/02/06-%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</url>
+    <url>/2021/02/02/TypeScript/06-%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<ul>
 <li><h3 id="在src文件夹中新建enum-ts文件，在index-ts中引入该文件"><a href="#在src文件夹中新建enum-ts文件，在index-ts中引入该文件" class="headerlink" title="在src文件夹中新建enum.ts文件，在index.ts中引入该文件"></a>在src文件夹中新建<code>enum.ts</code>文件，在<code>index.ts</code>中引入该文件</h3></li>
 </ul>
@@ -190,7 +187,7 @@
   </entry>
   <entry>
     <title>07 | 接口（1）：对象类型接口</title>
-    <url>/2022/02/25/07-%E6%8E%A5%E5%8F%A3%EF%BC%881%EF%BC%89%EF%BC%9A%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3/</url>
+    <url>/2022/02/25/TypeScript/07-%E6%8E%A5%E5%8F%A3%EF%BC%881%EF%BC%89%EF%BC%9A%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<blockquote>
 <p>interface.ts</p>
 </blockquote>
@@ -206,25 +203,8 @@
       </tags>
   </entry>
   <entry>
-    <title>09 | 函数相关知识点梳理</title>
-    <url>/2022/02/25/09-%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</url>
-    <content><![CDATA[<blockquote>
-<p>function.ts</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 函数定义</span><br><span class="line">function add1(x:number, y:number)&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let add2: (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">type add3 &#x3D; (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">interface add4&#123;</span><br><span class="line">    (x:number,y:number): number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; add1(1,2,3)</span><br><span class="line"></span><br><span class="line">function add5(x:number,y?:number)&#123;</span><br><span class="line">    return y?x+y:x;</span><br><span class="line">&#125;</span><br><span class="line">add5(1)</span><br><span class="line"></span><br><span class="line">function add6(x:number,y&#x3D;0,z:number,q&#x3D;1)&#123;</span><br><span class="line">    return x + y + z + q;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add6(1,undefined, 3));</span><br><span class="line"></span><br><span class="line">function add7(x:number,...rest:number[])&#123;</span><br><span class="line">    return x + rest.reduce((pre, cur)&#x3D;&gt; pre +cur) ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(add7(1,2,3,4,5))</span><br><span class="line"></span><br><span class="line">function add8(...rest: number[]): number;</span><br><span class="line">function add8(...rest: string[]): string;</span><br><span class="line">function add8(...rest: any[]): any&#123;</span><br><span class="line">    let first &#x3D; rest[0];</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;string&#39;)&#123;</span><br><span class="line">        return rest.join(&#39;&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;number&#39;)&#123;</span><br><span class="line">        return rest.reduce((pre, cur)&#x3D;&gt; pre + cur);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add8(1,2,3));</span><br><span class="line">console.log(add8(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;));</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习路径</category>
-        <category>前端工程师</category>
-        <category>TypeScript</category>
-      </categories>
-      <tags>
-        <tag>TypeScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>08 | 接口（2）：函数类型接口</title>
-    <url>/2022/02/25/08-%E6%8E%A5%E5%8F%A3%EF%BC%882%EF%BC%89%EF%BC%9A%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3/</url>
+    <url>/2022/02/25/TypeScript/08-%E6%8E%A5%E5%8F%A3%EF%BC%882%EF%BC%89%EF%BC%9A%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<blockquote>
 <p>interface1.ts</p>
 </blockquote>
@@ -240,12 +220,12 @@
       </tags>
   </entry>
   <entry>
-    <title>11 | 类（2）：抽象类与多态</title>
-    <url>/2022/02/26/11-%E7%B1%BB%EF%BC%882%EF%BC%89%EF%BC%9A%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E5%A4%9A%E6%80%81/</url>
+    <title>09 | 函数相关知识点梳理</title>
+    <url>/2022/02/25/TypeScript/09-%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</url>
     <content><![CDATA[<blockquote>
-<p>class1.ts</p>
+<p>function.ts</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">abstract class Animal &#123;</span><br><span class="line">    eat()&#123;</span><br><span class="line">        console.log(&#39;eat&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    abstract sleep(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog1 extends Animal&#123;</span><br><span class="line">    constructor(name: string) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    name: string</span><br><span class="line">    run()&#123;&#125;</span><br><span class="line">    sleep()&#123;</span><br><span class="line">        console.log(&#39;dog sleep&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let dog1 &#x3D; new Dog1(&#39;wangwang&#39;);</span><br><span class="line">dog1.eat();</span><br><span class="line"></span><br><span class="line">class Cat extends Animal&#123;</span><br><span class="line">sleep()&#123;</span><br><span class="line">    console.log(&#39;Cat sleep&#39;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">let cat &#x3D; new Cat();</span><br><span class="line"></span><br><span class="line">let animals: Animal[] &#x3D; [dog1, cat]</span><br><span class="line">animals.forEach(i&#x3D;&gt;&#123;</span><br><span class="line">    i.sleep();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">class WorkFlow &#123;</span><br><span class="line">    step1()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">    step2()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new WorkFlow().step1().step2();</span><br><span class="line"></span><br><span class="line">class Myflow extends WorkFlow&#123;</span><br><span class="line">    next()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new Myflow().next().step1().step2();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 函数定义</span><br><span class="line">function add1(x:number, y:number)&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let add2: (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">type add3 &#x3D; (x:number, y:number) &#x3D;&gt; number</span><br><span class="line"></span><br><span class="line">interface add4&#123;</span><br><span class="line">    (x:number,y:number): number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; add1(1,2,3)</span><br><span class="line"></span><br><span class="line">function add5(x:number,y?:number)&#123;</span><br><span class="line">    return y?x+y:x;</span><br><span class="line">&#125;</span><br><span class="line">add5(1)</span><br><span class="line"></span><br><span class="line">function add6(x:number,y&#x3D;0,z:number,q&#x3D;1)&#123;</span><br><span class="line">    return x + y + z + q;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add6(1,undefined, 3));</span><br><span class="line"></span><br><span class="line">function add7(x:number,...rest:number[])&#123;</span><br><span class="line">    return x + rest.reduce((pre, cur)&#x3D;&gt; pre +cur) ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(add7(1,2,3,4,5))</span><br><span class="line"></span><br><span class="line">function add8(...rest: number[]): number;</span><br><span class="line">function add8(...rest: string[]): string;</span><br><span class="line">function add8(...rest: any[]): any&#123;</span><br><span class="line">    let first &#x3D; rest[0];</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;string&#39;)&#123;</span><br><span class="line">        return rest.join(&#39;&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">    if(typeof first &#x3D;&#x3D;&#x3D; &#39;number&#39;)&#123;</span><br><span class="line">        return rest.reduce((pre, cur)&#x3D;&gt; pre + cur);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add8(1,2,3));</span><br><span class="line">console.log(add8(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;));</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>学习路径</category>
@@ -258,7 +238,7 @@
   </entry>
   <entry>
     <title>10 | 类（1）：继承和成员修饰符</title>
-    <url>/2022/02/26/10-%E7%B1%BB%EF%BC%881%EF%BC%89%EF%BC%9A%E7%BB%A7%E6%89%BF%E5%92%8C%E6%88%90%E5%91%98%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>
+    <url>/2022/02/26/TypeScript/10-%E7%B1%BB%EF%BC%881%EF%BC%89%EF%BC%9A%E7%BB%A7%E6%89%BF%E5%92%8C%E6%88%90%E5%91%98%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>
     <content><![CDATA[<blockquote>
 <p>class.ts</p>
 </blockquote>
@@ -274,22 +254,87 @@
       </tags>
   </entry>
   <entry>
-    <title>欢迎来到GuoYu的博客</title>
-    <url>/2020/12/17/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <title>11 | 类（2）：抽象类与多态</title>
+    <url>/2022/02/26/TypeScript/11-%E7%B1%BB%EF%BC%882%EF%BC%89%EF%BC%9A%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<blockquote>
-<p>本站主页：<br><a href="https://www.guoyu.ren/">https://www.guoyu.ren/</a></p>
+<p>class1.ts</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">abstract class Animal &#123;</span><br><span class="line">    eat()&#123;</span><br><span class="line">        console.log(&#39;eat&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    abstract sleep(): void;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog1 extends Animal&#123;</span><br><span class="line">    constructor(name: string) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    name: string</span><br><span class="line">    run()&#123;&#125;</span><br><span class="line">    sleep()&#123;</span><br><span class="line">        console.log(&#39;dog sleep&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let dog1 &#x3D; new Dog1(&#39;wangwang&#39;);</span><br><span class="line">dog1.eat();</span><br><span class="line"></span><br><span class="line">class Cat extends Animal&#123;</span><br><span class="line">sleep()&#123;</span><br><span class="line">    console.log(&#39;Cat sleep&#39;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">let cat &#x3D; new Cat();</span><br><span class="line"></span><br><span class="line">let animals: Animal[] &#x3D; [dog1, cat]</span><br><span class="line">animals.forEach(i&#x3D;&gt;&#123;</span><br><span class="line">    i.sleep();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">class WorkFlow &#123;</span><br><span class="line">    step1()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">    step2()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new WorkFlow().step1().step2();</span><br><span class="line"></span><br><span class="line">class Myflow extends WorkFlow&#123;</span><br><span class="line">    next()&#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">new Myflow().next().step1().step2();</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>其他</category>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
       </categories>
       <tags>
-        <tag>OTHER</tag>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>13 | 泛型（1）：泛型函数与泛型接口</title>
+    <url>/2022/02/27/TypeScript/13-%E6%B3%9B%E5%9E%8B%EF%BC%881%EF%BC%89%EF%BC%9A%E6%B3%9B%E5%9E%8B%E5%87%BD%E6%95%B0%E4%B8%8E%E6%B3%9B%E5%9E%8B%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<blockquote>
+<p>generics.ts</p>
+</blockquote>
+<blockquote>
+<p>泛型：不预先确定的数据类型，具体的类型在使用的时候才能确定</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function log&lt;T&gt;(value: T): T &#123;</span><br><span class="line">    console.log(value);</span><br><span class="line">    return value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">log&lt;string[]&gt;([&#39;a&#39;,&#39;b&#39;]);</span><br><span class="line">log([&#39;a&#39;,&#39;b&#39;])</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; type Log &#x3D; &lt;T&gt;(value: T) &#x3D;&gt; T</span><br><span class="line">&#x2F;&#x2F; let myLog: Log &#x3D; log;</span><br><span class="line"></span><br><span class="line">interface Log&lt;T &#x3D; string&gt; &#123;</span><br><span class="line">    (value: T): T</span><br><span class="line">&#125;</span><br><span class="line">let myLog: Log &#x3D; log</span><br><span class="line">myLog(&#39;1&#39;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>14 | 泛型（2）：泛型类与泛型约束</title>
+    <url>/2022/02/27/TypeScript/14-%E6%B3%9B%E5%9E%8B%EF%BC%882%EF%BC%89%EF%BC%9A%E6%B3%9B%E5%9E%8B%E7%B1%BB%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F/</url>
+    <content><![CDATA[<blockquote>
+<p>generics1.ts</p>
+</blockquote>
+<blockquote>
+<p>泛型的好处：</p>
+<ol>
+<li>函数和类可以轻松地支持多种类型，增强程序的扩展性</li>
+<li>不必写多条函数重载</li>
+<li>灵活控制类型之间的约束</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Log1&lt;T&gt; &#123;</span><br><span class="line">    run(value: T) &#123;</span><br><span class="line">        console.log(value);</span><br><span class="line">        return value;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let log1 &#x3D; new Log1&lt;number&gt;()</span><br><span class="line">log1.run(1)</span><br><span class="line">let log2 &#x3D; new Log1()</span><br><span class="line">log2.run(&#39;1&#39;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">interface Length &#123;</span><br><span class="line">    length: number</span><br><span class="line">&#125;</span><br><span class="line">function log3&lt;T extends Length&gt;(value: T): T &#123;</span><br><span class="line">    console.log(value, value.length);</span><br><span class="line">    return value;</span><br><span class="line">&#125;</span><br><span class="line">log3([1])</span><br><span class="line">log3(&#39;123&#39;)</span><br><span class="line">log3(&#123;length: 1&#125;)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>15 | 类型检查机制（1）：类型推断</title>
+    <url>/2022/02/27/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
       </tags>
   </entry>
   <entry>
     <title>12 | 类与接口的关系</title>
-    <url>/2022/02/26/12-%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+    <url>/2022/02/26/TypeScript/12-%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
     <content><![CDATA[<blockquote>
 <p>class-interface.ts</p>
 </blockquote>
@@ -307,6 +352,134 @@
       </categories>
       <tags>
         <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>16 | 类型检查机制（2）：类型兼容性</title>
+    <url>/2022/02/27/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>17 | 类型检查机制（3）：类型保护</title>
+    <url>/2022/02/27/TypeScript/17-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E4%BF%9D%E6%8A%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>18 | 高级类型（1）：交叉类型与联合类型</title>
+    <url>/2022/02/27/TypeScript/18-%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%EF%BC%881%EF%BC%89%EF%BC%9A%E4%BA%A4%E5%8F%89%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>19 | 高级类型（2）：索引类型</title>
+    <url>/2022/02/27/TypeScript/19-%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>20 | 高级类型（3）：映射类型</title>
+    <url>/2022/02/27/TypeScript/20-%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%EF%BC%883%EF%BC%89%EF%BC%9A%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>21 | 高级类型（4）：条件类型</title>
+    <url>/2022/02/27/TypeScript/21-%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%EF%BC%884%EF%BC%89%EF%BC%9A%E6%9D%A1%E4%BB%B6%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>xxx.ts</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习路径</category>
+        <category>前端工程师</category>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到GuoYu的博客</title>
+    <url>/2020/12/17/index/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>本站主页：<br><a href="https://www.guoyu.ren/">https://www.guoyu.ren/</a></p>
+</blockquote>
+<p><strong>添加next主题【已使用】</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<p><strong>设置顶部页面加载进度条【已使用】</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br></pre></td></tr></table></figure>
+
+<p><strong>Canvas-nest 背景【已使用】</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Canvas-nest</span><br><span class="line"># Dependencies: https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest</span><br><span class="line">canvas_nest:</span><br><span class="line">  enable: true</span><br><span class="line">  onmobile: false # 是否在手机上显示</span><br><span class="line">  color: &quot;0,0,255&quot; # RGB颜色值, 用 &#39;,&#39; 分隔</span><br><span class="line">  opacity: 0.5 # 线条透明度: 0~1</span><br><span class="line">  zIndex: -1 # 背景的 z-index 属性值</span><br><span class="line">  count: 99 # 线条数量</span><br></pre></td></tr></table></figure>
+
+<p><strong>Canvas-ribbon 背景【未使用】</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-ribbon source&#x2F;lib&#x2F;canvas-ribbon</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>OTHER</tag>
       </tags>
   </entry>
 </search>
