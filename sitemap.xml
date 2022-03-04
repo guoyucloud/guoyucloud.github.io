@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.guoyu.ren/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guoyu.ren/2022/02/27/TypeScript/17-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E4%BF%9D%E6%8A%A4/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.guoyu.ren/2020/12/17/index/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0GuoYu%E7%9A%84%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2022-02-28</lastmod>
@@ -110,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/</loc>
-    
-    <lastmod>2022-02-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.guoyu.ren/2022/02/28/TypeScript/15-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/</loc>
     
     <lastmod>2022-02-28</lastmod>
@@ -218,15 +227,6 @@
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/2022/02/27/TypeScript/17-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E4%BF%9D%E6%8A%A4/</loc>
-    
-    <lastmod>2022-02-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.guoyu.ren/about/index.html</loc>
     
     <lastmod>2022-02-17</lastmod>
@@ -256,7 +256,7 @@
 
   <url>
     <loc>https://www.guoyu.ren/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,14 +264,14 @@
   
   <url>
     <loc>https://www.guoyu.ren/tags/OTHER/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/tags/ts/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -280,28 +280,28 @@
   
   <url>
     <loc>https://www.guoyu.ren/categories/other/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/web/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/web/TypeScript/</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

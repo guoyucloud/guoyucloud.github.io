@@ -25,15 +25,15 @@
     var CONFIG = {"hostname":"www.guoyu.ren","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="xxx.ts  1">
+  <meta name="description" content="advanced2.ts 1234567891011121314151617181920212223enum Type &amp;#123; Strong, Week&amp;#125;class Java &amp;#123;    helloJava() &amp;#123;        console.log(&#39;Hello Java&#39;)    &amp;#125;&amp;#125;class JavaScript &amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="17 | 类型检查机制（3）：类型保护">
 <meta property="og:url" content="https://www.guoyu.ren/2022/02/27/TypeScript/17-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E4%BF%9D%E6%8A%A4/index.html">
 <meta property="og:site_name" content="WEB前端技术">
-<meta property="og:description" content="xxx.ts  1">
+<meta property="og:description" content="advanced2.ts 1234567891011121314151617181920212223enum Type &amp;#123; Strong, Week&amp;#125;class Java &amp;#123;    helloJava() &amp;#123;        console.log(&#39;Hello Java&#39;)    &amp;#125;&amp;#125;class JavaScript &amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-27T06:58:48.000Z">
-<meta property="article:modified_time" content="2022-02-27T06:58:48.903Z">
+<meta property="article:modified_time" content="2022-03-04T04:05:42.300Z">
 <meta property="article:author" content="郭宇">
 <meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
@@ -239,6 +239,13 @@
 
               <time title="创建时间：2022-02-27 14:58:48" itemprop="dateCreated datePublished" datetime="2022-02-27T14:58:48+08:00">2022-02-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-04 12:05:42" itemprop="dateModified" datetime="2022-03-04T12:05:42+08:00">2022-03-04</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -270,7 +277,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7</span>
+              <span>444</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -289,10 +296,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>xxx.ts</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+        <p><code>advanced2.ts</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">enum Type &#123; Strong, Week&#125;</span><br><span class="line"></span><br><span class="line">class Java &#123;</span><br><span class="line">    helloJava() &#123;</span><br><span class="line">        console.log(&#39;Hello Java&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class JavaScript &#123;</span><br><span class="line">    helloJavaScript() &#123;</span><br><span class="line">        console.log(&#39;Hello JavaScript&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getLanguage(type: Type) &#123;</span><br><span class="line">    let lang &#x3D; type &#x3D;&#x3D;&#x3D; Type.Strong ? new Java() : new JavaScript()</span><br><span class="line">    if (lang.helloJava)&#123;</span><br><span class="line">        lang.helloJava()</span><br><span class="line">    &#125;</span><br><span class="line">    return lang</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getLanguage(Type.Strong)</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -508,13 +513,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">19k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">14 分钟</span>
+    <span title="站点阅读时长">17 分钟</span>
 </div>
 
         
