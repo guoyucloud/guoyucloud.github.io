@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.guoyu.ren/about/index.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.guoyu.ren/2022/03/01/TypeScript/16-%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E6%9C%BA%E5%88%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%85%BC%E5%AE%B9%E6%80%A7/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -227,15 +236,6 @@
   </url>
   
   <url>
-    <loc>https://www.guoyu.ren/about/index.html</loc>
-    
-    <lastmod>2022-02-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.guoyu.ren/tags/index.html</loc>
     
     <lastmod>2021-09-03</lastmod>
@@ -256,7 +256,7 @@
 
   <url>
     <loc>https://www.guoyu.ren/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,14 +264,14 @@
   
   <url>
     <loc>https://www.guoyu.ren/tags/OTHER/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/tags/ts/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -280,28 +280,28 @@
   
   <url>
     <loc>https://www.guoyu.ren/categories/other/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/web/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.guoyu.ren/categories/learning/web/TypeScript/</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
